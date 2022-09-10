@@ -21,6 +21,7 @@ SWEP.Primary.ClipMax = 60
 SWEP.Primary.DefaultClip = 30
 SWEP.Primary.Sound = Sound("Weapon_AUG.Single")
 SWEP.Secondary.Sound = Sound("Default.Zoom")
+SWEP.HeadshotMultiplier = 3			-- 1
 
 SWEP.UseHands = true
 SWEP.ViewModelFlip = false
