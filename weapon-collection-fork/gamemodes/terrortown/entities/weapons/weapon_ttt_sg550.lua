@@ -11,17 +11,17 @@ SWEP.Base = "weapon_tttbase"
 SWEP.HoldType = "ar2"
 
 SWEP.Primary.Ammo = "357"
-SWEP.Primary.Delay = 0.6
-SWEP.Primary.Recoil = 2
-SWEP.Primary.Cone = 0.005
-SWEP.Primary.Damage = 42
-SWEP.Primary.Automatic = false
-SWEP.Primary.ClipSize = 20
-SWEP.Primary.ClipMax = 40
-SWEP.Primary.DefaultClip = 20
+SWEP.Primary.Delay = 0.6			-- 0.6
+SWEP.Primary.Recoil = 2				-- 2
+SWEP.Primary.Cone = 0.1				-- 0.005
+SWEP.Primary.Damage = 31			-- 42
+SWEP.Primary.Automatic = false		-- false
+SWEP.Primary.ClipSize = 20			-- 20
+SWEP.Primary.ClipMax = 40			-- 40
+SWEP.Primary.DefaultClip = 20		-- 20
 SWEP.Primary.Sound = Sound("Weapon_SG550.Single")
 SWEP.Secondary.Sound = Sound("Default.Zoom")
-SWEP.HeadshotMultiplier = 4
+SWEP.HeadshotMultiplier = 5			-- 4
 
 SWEP.UseHands = true
 SWEP.ViewModelFlip = false
@@ -44,8 +44,10 @@ function SWEP:SetZoom(state)
     if IsValid(self:GetOwner()) and self:GetOwner():IsPlayer() then
         if state then
             self:GetOwner():SetFOV(20, 0.3)
+			self.Primary.Cone = 0.005
         else
             self:GetOwner():SetFOV(0, 0.2)
+			self.Primary.Cone = 0.1 -- 0.005
         end
     end
 end

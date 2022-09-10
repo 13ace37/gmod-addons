@@ -18,7 +18,7 @@ SWEP.WorldModel = Model("models/weapons/w_eq_fraggrenade.mdl")
 
 SWEP.Kind = WEAPON_NADE
 SWEP.AutoSpawnable = false
-SWEP.CanBuy = {ROLE_TRAITOR}
+-- SWEP.CanBuy = {ROLE_TRAITOR}
 SWEP.InLoadoutFor = {nil}
 SWEP.LimitedStock = true
 SWEP.AllowDrop = true
