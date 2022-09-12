@@ -23,7 +23,7 @@ SWEP.Primary.Recoil        = 7		-- 7
 SWEP.Primary.Automatic     = true
 SWEP.Primary.Ammo          = "357"
 SWEP.Primary.Damage        = 25		-- 50
-SWEP.Primary.Cone          = 0.1	-- 0.005
+SWEP.Primary.Cone          = 0.01	-- 0.005
 SWEP.Primary.ClipSize      = 10		-- 10
 SWEP.Primary.ClipMax       = 20 	-- 20
 SWEP.Primary.DefaultClip   = 10		-- 10
@@ -52,7 +52,7 @@ function SWEP:SetZoom(state)
 			self.Primary.Cone = 0.005
 		else
 			self:GetOwner():SetFOV(0, 0.2)
-			self.Primary.Cone = 0.1	-- 0.005
+			self.Primary.Cone = 0.01	-- 0.005
 		end
 	end
 end
