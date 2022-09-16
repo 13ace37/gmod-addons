@@ -11,9 +11,9 @@ SWEP.Base = "weapon_tttbase"
 SWEP.HoldType = "ar2"
 
 SWEP.Primary.Ammo = "357"
-SWEP.Primary.Delay = 0.6			-- 0.6
+SWEP.Primary.Delay = 0.9			-- 0.6
 SWEP.Primary.Recoil = 2				-- 2
-SWEP.Primary.Cone = 0.1				-- 0.005
+SWEP.Primary.Cone = 0.01				-- 0.005
 SWEP.Primary.Damage = 31			-- 42
 SWEP.Primary.Automatic = false		-- false
 SWEP.Primary.ClipSize = 20			-- 20
@@ -44,10 +44,8 @@ function SWEP:SetZoom(state)
     if IsValid(self:GetOwner()) and self:GetOwner():IsPlayer() then
         if state then
             self:GetOwner():SetFOV(20, 0.3)
-			self.Primary.Cone = 0.005
         else
             self:GetOwner():SetFOV(0, 0.2)
-			self.Primary.Cone = 0.1 -- 0.005
         end
     end
 end

@@ -11,17 +11,17 @@ SWEP.Base = "weapon_tttbase"
 SWEP.HoldType = "ar2"
 
 SWEP.Primary.Ammo = "357"
-SWEP.Primary.Delay = 0.6		-- 0.3
+SWEP.Primary.Delay = 0.3		-- 0.3
 SWEP.Primary.Recoil = 3			-- 2
 SWEP.Primary.Cone = 0.01			-- 0.005
-SWEP.Primary.Damage = 18		-- 36
+SWEP.Primary.Damage = 36		-- 36
 SWEP.Primary.Automatic = false
-SWEP.Primary.ClipSize = 10		-- 20
+SWEP.Primary.ClipSize = 5		-- 20
 SWEP.Primary.ClipMax = 40		-- 40
 SWEP.Primary.DefaultClip = 10	-- 20
 SWEP.Primary.Sound = Sound("Weapon_G3SG1.Single")
 SWEP.Secondary.Sound = Sound("Default.Zoom")
-SWEP.HeadshotMultiplier = 8		-- 4
+SWEP.HeadshotMultiplier = 4		-- 4
 
 SWEP.UseHands = true
 SWEP.ViewModelFlip = false

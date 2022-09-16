@@ -22,7 +22,7 @@ SWEP.Primary.Delay         = 1.5	-- 1.5
 SWEP.Primary.Recoil        = 7		-- 7
 SWEP.Primary.Automatic     = true
 SWEP.Primary.Ammo          = "357"
-SWEP.Primary.Damage        = 25		-- 50
+SWEP.Primary.Damage        = 50		-- 50
 SWEP.Primary.Cone          = 0.01	-- 0.005
 SWEP.Primary.ClipSize      = 10		-- 10
 SWEP.Primary.ClipMax       = 20 	-- 20
@@ -32,7 +32,7 @@ SWEP.Primary.Sound         = Sound("Weapon_Scout.Single")
 SWEP.Secondary.Sound       = Sound("Default.Zoom")
 SWEP.Secondary.Cone        = 0.005
 
-SWEP.HeadshotMultiplier    = 8		-- 4
+SWEP.HeadshotMultiplier    = 4		-- 4
 
 SWEP.AutoSpawnable         = true
 SWEP.Spawnable             = true
